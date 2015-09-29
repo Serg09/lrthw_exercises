@@ -1,4 +1,4 @@
-## 1) Provide a link in your Readme.md that links to the documentation for the following classes:
+### 1) Provide a link in your Readme.md that links to the documentation for the following classes:
 
 **Array**
 
@@ -12,7 +12,7 @@
 
 > [Documentation for the rubygem Chronic](http://chronic.rubyforge.org/)
 
-## 2) Find two other relative ruby documentation links and add those to the Readme.md as well.
+### 2) Find two other relative ruby documentation links and add those to the Readme.md as well.
 
 **Object**
 
@@ -22,7 +22,7 @@
 
 > [Documentation about Symbol in Ruby](http://ruby-doc.org/core-2.2.3/Symbol.html)
 
-## 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
+### 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
 
 **Have verifyed Rubocop guard output for the errors by running command:**
 
