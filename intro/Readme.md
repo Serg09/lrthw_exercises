@@ -1,29 +1,60 @@
-1) What are the three most essential skills that a beginner programmer needs to know?
----
-### Please explain these three skills in your own words.
+## 1) Provide a link in your Readme.md that links to the documentation for the following classes:
 
-> The three most essential skills that beginner programmer need to know are reading and writing, attention to detail, and spotting differences.
+**Array**
 
-##### Reading and writing 
+> [Documentation for the Array class](http://ruby-doc.org/core-2.2.3/Array.html)
 
-> - To learn how software works must be familiar with typing the odd characters and know the names of the symbols. Reading and writing skills associated with ability to type and read the language.
-   
-##### Attention to Detail
-   
-> - Not to miss anything in created work it is important to pay attention to the smallest details. This what separates bad programmer from a good programmer.
+**Hash**
 
-##### Spotting Differences
-   
-> - It is important to train brain to see the difference in two pieces of code even if difference is not big. This will train to see mistakes and other problems.
+> [Documentation for the Hash class](http://ruby-doc.org/core-2.2.3/Hash.html)
 
+**Chronic (Rubygem)**
 
-2) Why do you need to not copy and paste?
----
+> [Documentation for the rubygem Chronic](http://chronic.rubyforge.org/)
 
-> - To train hands and brain how to see and read and write code should not use Copy and Paste. By manual typing you exercise yourself to be a good programmer.
+## 2) Find two other relative ruby documentation links and add those to the Readme.md as well.
 
-3) Why is Practice and Persistence important?
----
+**Object**
 
-> - By trying to understand and trying to type at some point will get it. With persistence and continues practice it will become easier and fun to program. 
- 
+> [Documentation about Object in Ruby](http://ruby-doc.org/core-2.2.3/Object.html)
+
+**Symbol**
+
+> [Documentation about Symbol in Ruby](http://ruby-doc.org/core-2.2.3/Symbol.html)
+
+## 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
+
+**Have verifyed Rubocop guard output for the errors by running command:**
+
+      rubocop
+      
+**The Rubocop find an error:**
+
+      Offenses:
+      
+      Guardfile:19:9: C: Use // around regular expression.
+        watch(%r{.+\.rb$})
+              ^^^^^^^^^^^
+      
+      2 files inspected, 1 offense detected
+      
+**To correct the error I would use command:**
+
+      rubocop --auto-correct
+
+The output: 
+
+      Guardfile:19:9: C: [Corrected] Use // around regular expression.
+        watch(%r{.+\.rb$})
+              ^^^^^^^^^^^
+      
+      2 files inspected, 1 offense detected, 1 offense corrected
+
+**Now I ran rubocop command again and the output shows no error:**
+
+      nspecting 2 files
+      ..
+      
+      2 files inspected, no offenses detected
+      
+**Auto-correction added double slash // around expression in watch(%r{.+\.rb$}). After correction the output of the expression was: watch(/.+\.rb$/)**
