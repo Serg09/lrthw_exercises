@@ -24,37 +24,17 @@
 
 ### 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
 
-**Have verifyed Rubocop guard output for the errors by running command:**
+**I would create a file .rubocop.yml with the code:**
 
-      rubocop
-      
-**The Rubocop find an error:**
+            AllCops:
+              Exclude:
+                - 'Guardfile'
+                
+**this would exclude 'Guardfile' from texting**
 
-      Offenses:
-      
-      Guardfile:19:9: C: Use // around regular expression.
-        watch(%r{.+\.rb$})
-              ^^^^^^^^^^^
-      
-      2 files inspected, 1 offense detected
-      
-**To correct the error I would use command:**
+**Then I would run command:**
 
-      rubocop --auto-correct
-
-The output: 
-
-      Guardfile:19:9: C: [Corrected] Use // around regular expression.
-        watch(%r{.+\.rb$})
-              ^^^^^^^^^^^
+      guard
       
-      2 files inspected, 1 offense detected, 1 offense corrected
-
-**Now I ran rubocop command again and the output shows no error:**
-
-      nspecting 2 files
-      ..
+**The output did not show any offenses.**
       
-      2 files inspected, no offenses detected
-      
-**Auto-correction added double slash // around expression in watch(%r{.+\.rb$}). After correction the output of the expression was: watch(/.+\.rb$/)**
