@@ -1,40 +1,115 @@
-### 1) Provide a link in your Readme.md that links to the documentation for the following classes:
+# LRTHW chapter_1
 
-**Array**
+First I would create a folder **intro** with Readme.md file to add notes.
 
-> [Documentation for the Array class](http://ruby-doc.org/core-2.2.3/Array.html)
+Would create **create chapter_1** folder with **file ex1.rb** file for the exercise codes.
 
-**Hash**
+Add code and run ruby ex1.rb command in iTerm.
 
-> [Documentation for the Hash class](http://ruby-doc.org/core-2.2.3/Hash.html)
+The output would be:
 
-**Chronic (Rubygem)**
+      Hello World!
+      Hello Again
+      O like typing this.
+      This is fun.
+      Yay!Printing.
+      I'd much rather you 'not'.
+      I "said" do not touch this.
+      
+Then I would do **Study Drills**
 
-> [Documentation for the rubygem Chronic](http://chronic.rubyforge.org/)
+Questions: 
 
-### 2) Find two other relative ruby documentation links and add those to the Readme.md as well.
+> 1) Make your script print another line.
 
-**Object**
+> 2) Make your script print only one of the lines.
 
-> [Documentation about Object in Ruby](http://ruby-doc.org/core-2.2.3/Object.html)
+> 3) Put a # (octothorpe) character at the beginning of a line. What did it do? Try to find out what this character does.
 
-**Symbol**
+The changes and comment would be
 
-> [Documentation about Symbol in Ruby](http://ruby-doc.org/core-2.2.3/Symbol.html)
+      # Make your script print another line.
 
-### 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
+      puts # add blank line to separate it from previous code
+      puts 'I\m learning Ruby!'
+      puts # add blank line to separate it from previous code
 
-**I would create a file .rubocop.yml with the code:**
+      # Make your script print only one of the lines.
 
-            AllCops:
-              Exclude:
-                - 'Guardfile'
-                
-**this would exclude 'Guardfile' from texting**
+      # puts 'Hello World!'
+      # puts 'Hello Again'
+      # puts 'O like typing this.'
+      puts 'This is fun.'
+      # puts 'Yay!Printing.'
+      # puts 'I\'d much rather you \'not\'.'
+      # puts 'I "said" do not touch this.'
+      # puts 'I\m learning Ruby!'
 
-**Then I would run command:**
+      # Put a # (octothorpe) character at the beginning of a line. What did it do? Try to find out what this character does.
+          # The # character changes the text string after it to a remark
+    
+
+# Rubocop Guard
+
+I would initialize and run **guard** command
 
       guard
       
-**The output did not show any offenses.**
+The output showed 5 offenses.
+
+      2:49:18 - INFO - Inspecting Ruby code style of all files
+      Inspecting 2 files
+      .C
+
+      Offenses:
+
+      chapter_1/ex1.rb:1:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      puts "Hello World!"
+          ^^^^^^^^^^^^^^
+      chapter_1/ex1.rb:2:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      puts "Hello Again"
+          ^^^^^^^^^^^^^
+      chapter_1/ex1.rb:3:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      puts "O like typing this."
+          ^^^^^^^^^^^^^^^^^^^^^
+      chapter_1/ex1.rb:4:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      puts "This is fun."
+          ^^^^^^^^^^^^^^
+      chapter_1/ex1.rb:5:6: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      puts "Yay!Printing."
+          ^^^^^^^^^^^^^^^
+
+      2 files inspected, 5 offenses detected
+
+      12:49:19 - INFO - Guard is now watching at '/Users/viola_lv/workspace/davinci_coders_t3_2015/homework/lrthw_exercises'
+
+I decided to fix the problem and use single quotes because I don't need string interpolation or special symbols.
+To fix offenses I changed double quotes to single quotes and were it needed add a back slash.
+
+> Changes:
+
+      puts 'Hello World!'
+      puts 'Hello Again'
+      puts 'O like typing this.'
+      puts 'This is fun.'
+      puts 'Yay!Printing.'
+      puts 'I\'d much rather you \'not\'.'
+      puts 'I "said" do not touch this.'
+
+
+I would run:
+
+      guard
       
+again to see if I did all corrections
+
+Output: 
+      
+      13:21:23 - INFO - Inspecting Ruby code style of all files
+      Inspecting 2 files
+      ..
+        
+      2 files inspected, no offenses detected
+      13:21:24 - INFO - Guard is now watching at '/Users/viola_lv/workspace/davinci_coders_t3_2015/homework/lrthw_exercises'
+       
+There is mo more offenses.
