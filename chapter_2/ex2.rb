@@ -1,9 +1,9 @@
-# Variables and expressions.
-a = 10
-b = 3 * a + 2
-printf("%d %d\n", a, b);
+# A comment, this is so you can read your program later.
+# Anything after the # is ignored by ruby.
 
-# Type is dynamic.
-b = "A string"
-c = 'Another String'
-print b + " and " + c + "\n"
+puts 'I could have code like this.' # and the comment after is ignored
+
+# You can also use a comment to "disable" or comment out a piece of code:
+# puts "This won't run."
+
+puts 'This will run.'
