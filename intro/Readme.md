@@ -27,4 +27,3 @@
 
 > - By trying to understand and trying to type at some point will get it. With persistence and continues practice it will become easier and fun to program. 
  
-
