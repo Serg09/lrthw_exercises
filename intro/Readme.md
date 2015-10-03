@@ -1,29 +1,40 @@
-1) What are the three most essential skills that a beginner programmer needs to know?
----
-### Please explain these three skills in your own words.
+### 1) Provide a link in your Readme.md that links to the documentation for the following classes:
 
-> The three most essential skills that beginner programmer need to know are reading and writing, attention to detail, and spotting differences.
+**Array**
 
-##### Reading and writing 
+> [Documentation for the Array class](http://ruby-doc.org/core-2.2.3/Array.html)
 
-> - To learn how software works must be familiar with typing the odd characters and know the names of the symbols. Reading and writing skills associated with ability to type and read the language.
-   
-##### Attention to Detail
-   
-> - Not to miss anything in created work it is important to pay attention to the smallest details. This what separates bad programmer from a good programmer.
+**Hash**
 
-##### Spotting Differences
-   
-> - It is important to train brain to see the difference in two pieces of code even if difference is not big. This will train to see mistakes and other problems.
+> [Documentation for the Hash class](http://ruby-doc.org/core-2.2.3/Hash.html)
 
+**Chronic (Rubygem)**
 
-2) Why do you need to not copy and paste?
----
+> [Documentation for the rubygem Chronic](http://chronic.rubyforge.org/)
 
-> - To train hands and brain how to see and read and write code should not use Copy and Paste. By manual typing you exercise yourself to be a good programmer.
+### 2) Find two other relative ruby documentation links and add those to the Readme.md as well.
 
-3) Why is Practice and Persistence important?
----
+**Object**
 
-> - By trying to understand and trying to type at some point will get it. With persistence and continues practice it will become easier and fun to program. 
- 
+> [Documentation about Object in Ruby](http://ruby-doc.org/core-2.2.3/Object.html)
+
+**Symbol**
+
+> [Documentation about Symbol in Ruby](http://ruby-doc.org/core-2.2.3/Symbol.html)
+
+### 3) Verify your Rubocop guard output had no errors, fix them if needed.  Add comments to the Readme.md about how you fixed any issues.
+
+**I would create a file .rubocop.yml with the code:**
+
+            AllCops:
+              Exclude:
+                - 'Guardfile'
+                
+**this would exclude 'Guardfile' from texting**
+
+**Then I would run command:**
+
+      guard
+      
+**The output did not show any offenses.**
+      
