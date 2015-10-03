@@ -25,5 +25,6 @@ puts 'This is fun.'
 # puts 'I "said" do not touch this.'
 # puts 'I\m learning Ruby!'
 
-# Put a # (octothorpe) character at the beginning of a line. What did it do? Try to find out what this character does.
-    # The # character changes the text string after it to a remark
+# Put a # (octothorpe) character at the beginning of a line.
+# What did it do? Try to find out what this character does.
+# The # character changes the text string after it to a remark
