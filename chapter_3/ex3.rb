@@ -12,14 +12,14 @@ puts 'Now I will count the eggs:'
 puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
 
 # print a string
-puts 'Is it true that 3+2<5-7?'
+puts 'Is it true that 3 + 2 < 5 - 7?'
 
 # print a math arithmetic
 puts 3 + 2 < 5 - 7
 
 # prints a combination of strings and code (used math arithmetic)
-puts "what is 3+2? #{3 + 2}"
-puts "What is 5-7? #{5 - 7}"
+puts "what is 3 + 2? #{3 + 2}"
+puts "What is 5 - 7? #{5 - 7}"
 
 # print a string
 puts 'Oh, that\'s why it\'s false.'
