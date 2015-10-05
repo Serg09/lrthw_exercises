@@ -16,13 +16,13 @@
 
     7
 
-    Is it true that 3+2<5-7?
+    Is it true that 3 + 2 < 5 - 7?
 
     false
 
-    what is 3+2? 5
+    what is 3 + 2? 5
 
-    What is 5-7? -2
+    What is 5 - 7? -2
 
     Oh, that's why it's false.
 
@@ -48,13 +48,13 @@
 
     6.75
 
-    Is it true that 3+2<5-7?
+    Is it true that 3 + 2 < 5 - 7?
 
     false
 
-    what is 3+2? 5.0
+    what is 3 + 2? 5.0
 
-    What is 5-7? -2.0
+    What is 5 - 7? -2.0
 
     Oh, that's why it's false.
 
