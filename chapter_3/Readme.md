@@ -4,7 +4,7 @@
 
 ### 3. The math looks wrong when there is a friction, and I am using whole number.  No make it looks right I should use decimal number (floating point).
 
-**The output for ex3.rb**
+**The output for ex3.rb** 
 
     I will now count my chickens:
 

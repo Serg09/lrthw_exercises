@@ -1,4 +1,4 @@
-(104389658_chapter_3_master) Serg09
+(104389658_chapter_3_master) Serg09 
 ---
 Violettas-MacBook-Pro:lrthw_exercises $ irb
 ---

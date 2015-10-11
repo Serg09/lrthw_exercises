@@ -5,13 +5,13 @@ puts "I will now count my chickens:"
 puts "Hens #{25 + 30 / 6}"
 puts "Roosters #{100 - 25 * 3 % 4}"
 
-# print a string
+# print another string
 puts "Now I will count the eggs:"
 
 # print a result of math arithmetic
 puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
 
-# print a string
+# print one more string
 puts "Is it true that 3 + 2 < 5 - 7?"
 
 # print a math arithmetic
