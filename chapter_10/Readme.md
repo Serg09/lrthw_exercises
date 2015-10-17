@@ -20,4 +20,4 @@ Explain the difference between these two in the Readme.md
 
 Add these escape sequences to your ex10.rb file.
 
-> put additional 'escape sequences' into exercise.
+> Did testing with additional 'escape sequences'.
